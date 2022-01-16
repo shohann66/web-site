@@ -1,0 +1,219 @@
+/*		Default Layout: 960px. 
+		Gutters: 24px.
+		Outer margins: 48px.
+		Leftover space for scrollbars @1024px: 32px.
+-------------------------------------------------------------------------------
+*/
+.wrap{
+	width:960px;
+	display:block;
+	margin:0 auto;
+}
+.img{
+	max-width:100%;
+	height:auto;
+}
+
+
+
+
+
+
+
+
+
+
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+.wrap{
+	width:95%;
+}
+#article{
+	width:65%;
+	margin-right: 2%;
+}	
+#sidebar {
+    width: 33%;	
+	
+	
+}
+	
+	
+	#header {
+    text-align: center;
+}	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (max-width: 767px) {
+	
+	
+	#header {
+    text-align: center;
+}
+#nav{
+	display:none;
+}
+.wrap{
+	width:98%;
+}
+#article{
+	width:100%;
+}	
+#sidebar {
+    width: 100%;	
+		
+}	
+#slider-c{
+	display:none;
+}	
+
+#wrap img {
+    width: 97%;
+    height: 100%;
+    margin-right: 0px;	
+	
+}
+#article figure {
+    width: 50%;	
+}	
+#article figcaption{
+	font-size:85%
+}	
+#article img {
+    width: 100%;
+}	
+#article figure {
+    padding: 5px;	
+}	
+blockquote {
+    margin-left: 2px;
+    padding: 4px 23px 0px 16px;
+    margin-top: 7px;
+}
+		
+}
+
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+.wrap{
+	width:98%;
+}
+#article{
+	width:100%;
+}	
+#sidebar {
+    width: 100%;	
+		
+}	
+#slider-c{
+	display:none;
+}	
+#article figure {
+    width: 50%;	
+}	
+#article figcaption{
+	font-size:85%
+}	
+#article img {
+    width: 100%;
+}	
+#article figure {
+    padding: 5px;	
+}	
+blockquote {
+    margin-left: 2px;
+    padding: 4px 23px 0px 16px;
+    margin-top: 7px;
+}
+	
+	
+	
+	
+}
+
+
+/*	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------    */
+
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+	
+
+	
+	#header {
+    text-align: center;
+}
+#nav{
+	display:none;
+}
+.wrap{
+	width:98%;
+}
+#article{
+	width:100%;
+}	
+#sidebar {
+    width: 100%;	
+		
+}	
+#slider-c{
+	display:none;
+}	
+
+#wrap img {
+    width: 97%;
+    height: 100%;
+    margin-right: 0px;	
+	
+}
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
